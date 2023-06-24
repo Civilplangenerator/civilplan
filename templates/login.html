@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+        <link href="{% static 'contentpage.html' %}"/>
+        <title>Login</title>
+        <div class="heading">
+            <h1 style="font-family:'courier new'"> 
+                 <br> CIVIL PLAN GENERATOR <br>
+            </h1>
+        </div> 
+        <h3 align="auto" class="intro">
+            Introduction
+        </h3>   
+    </head>
+    <body>
+        <form >
+            <div class="boarder">
+                <fieldset class="fld">
+                    <legend>Login Details</legend>
+                    <div>
+                        <form action="login" method='POST'>
+                            {% csrf_token %}
+                            <div class="red">
+                                Username:
+                                <input type="text" name="username" class="t">
+                            </div>
+                            <div class="red">
+                                Password:
+                                <input type="password" value="password" class="t">
+                            </div>
+                            <button type="submit">login</button>
+                        </form>
+                    </div>
+                </fieldset>
+            <div>
+        </form>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
