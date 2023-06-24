@@ -1,7 +1,8 @@
 # civilplan
+&nbsp;
 Mini Project : civil plan generator using machine learning with python
-&nsnp;
+&nbsp;
 Done By :
-&nsnp; Muhammed Shan
-&nsnp; Navaneeth Sudevan
-&nsnp; Vishnu V
+&nbsp; Muhammed Shan
+&nbsp; Navaneeth Sudevan
+&nbsp; Vishnu V
