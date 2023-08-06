@@ -1,0 +1,343 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}" />
+        <link href="{% static 'contentpage.html' %}"/>
+        <style>
+            :root{
+                --dark: #374151;
+                --darker: #1f2937;
+                --darkest: #111827;
+                --gray: #6B7280;
+                --light: #EEE;
+                --pink: #EC4899;
+                --purple: #885CF6;
+            }
+            .f{
+                background-image:linear-gradient(to right, var(--pink), var(--purple));
+            }
+
+            .bgr{
+                background-image:'backgroundpic.jpg' ;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0%;
+                padding: 0%;
+                margin-bottom: 0%;
+                scrollbar-width: none;
+            }
+            body::-webkit-scrollbar{
+                display: none;
+            }
+            .heading{
+                display:flex;
+                margin: 50%;
+                margin-top: 10%;   
+                transform: translate(-50%,-50%);
+                text-align: center;
+                justify-content: center;
+                background-color: inherit;
+                width: 25rem;
+                margin: auto;
+                border-radius: 12rem;
+                text-align: center;
+            }
+            .intro{
+                display:flex;
+                margin: 50%;
+                margin-top: 10%;   
+                transform: translate(-50%,-50%);
+                text-align: center;
+                justify-content: center;
+                background-color: inherit;
+                width: 11rem;
+                margin: auto;
+                border-radius: 5rem;
+                text-align: center;
+
+            }
+            .red{
+                display:flex;
+                margin: 50%;
+                margin-top: 10%;   
+                text-align: center;
+                justify-content: center;
+                color:#ffff;
+                width: 40rem;
+                margin: auto;
+                border-radius: 10rem;
+                text-align: center;
+                height: 2rem;
+            }
+
+            .s1{
+
+                background-color: rgb(235, 230, 230);
+                width: max-content;
+                margin: auto;
+            }
+
+            .t {
+                display:flex;
+                margin: 50%;
+                margin-top: 10%;   
+                transform: translate(-50%,-50%);
+                text-align: center;
+                justify-content: center;
+                color:#ffff;
+                width: 20rem;
+                height: 1.5rem;
+                initial-letter-align: center;
+                margin: auto;
+                border-radius: 5rem;
+                text-align: center;
+
+            }
+            .r{
+                width: 7rem;
+                color: #111827;
+            }
+            .but{
+                width: 20rem;
+                height: 1.5rem;
+                background-color: inherit;
+            }
+            .boarder{
+                margin-bottom: 70%;
+                font-size: 18px;
+                width:center;
+                line-height: 1.8;
+                padding: 100px 400px;
+                color: black;
+            }
+            .boarder1{
+                font-size: 18px;
+                width:center;
+                line-height: 1.5;
+                padding: 100px 400px;
+                color: black;
+            }
+            .text{
+                text-align: center;
+            }
+            .fld{
+                backdrop-filter: blur(10px);
+                border-color: black;
+                border-radius: 1rem;
+            }
+            .port{
+                font-style: italic;
+                margin:auto;
+                text-align:center;
+                font-size: 3rem;
+            }
+            .intro2{
+                border-radius: 0.5rem;
+                padding: 3rem 18rem;
+            }
+            .content{
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 0.5rem;
+            }
+            .footer{
+                padding:3rem 18rem;
+            }
+        </style>
+        <title>build</title>
+        <div class="heading">
+            <h1 style="color:#ffff;font-family:'courier new'; background-color: inherit;"> 
+                 <br> CIVIL PLAN GENERATOR <br>
+            </h1>
+        </div> 
+        <h3 align="auto" class="intro">
+            
+        </h3>   
+    </head>
+    <body style="background:linear-gradient(deg60,rgb(4, 4, 96),rgb(45, 45, 146));">
+        <form>
+            <div class="boarder1">
+                <fieldset class="fld">
+                    <legend style="color:white;">Home Details</legend>
+                        <div>
+                            <form action="login" method='POST'>
+                                {% csrf_token %}
+                                <br>
+                                <div class="red">
+                                    <h3 class="t"> 1 BHK : Dimensions<br></h3> 
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Bedroom :
+                                    <input type="text"  class="t">
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Bathroom:
+                                    <input type="text" class="t">
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Kitchen :
+                                    <input type="radio" class="r" value="yes" checked> YES
+                                    <input type="radio" class="r" value="no" checked> NO
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Dining :
+                                    <input type="radio" class="r" value="yes" checked> YES
+                                    <input type="radio" class="r" value="no" checked> NO
+                                </div>
+                                <br>
+                                <div class="red">
+                                    <button type="submit" class="button" style="border-radius:0.5rem;box-shadow:0.15rem 0.15rem 0.15rem 0.15rem #ffff;position:absolute; margin-left:35%; margin-right:30%; height: 1.5rem;font-weight: bold;font-size:large; border: none; background-color:inherit; margin-right:1%;margin-left:1%;cursor:pointer; color:white;"> Generate </button>
+                                </div>
+                                <div>
+                                    <br>
+                                </div>
+                            </form>
+                        </div>
+                </fieldset>
+            <div>
+        </form>
+        <form>
+            <div class="boarder1">
+                <fieldset class="fld">
+                    <legend style="color:white;">Home Details</legend>
+                        <div>
+                            <form action="login" method='POST'>
+                                {% csrf_token %}
+                                <br>
+                                <div class="red">
+                                    <h3 class="t"> 1 BHK : Dimensions<br></h3> 
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Bedroom :
+                                    <input type="text"  class="t">
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Bathroom:
+                                    <input type="text" class="t">
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Kitchen :
+                                    <input type="radio" class="r" value="yes" checked> YES
+                                    <input type="radio" class="r" value="no" checked> NO
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Dining :
+                                    <input type="radio" class="r" value="yes" checked> YES
+                                    <input type="radio" class="r" value="no" checked> NO
+                                </div>
+                                <br>
+                                <div class="red">
+                                    <button type="submit" class="button" style="border-radius:0.5rem;box-shadow:0.15rem 0.15rem 0.15rem 0.15rem #ffff;position:absolute; margin-left:40%; margin-right:30%; height: 1.5rem;font-weight: bold;font-size:large; border: none; background-color:inherit; margin-right:1%;margin-left:1%;cursor:pointer; color:white;"> Generate </button>
+                                </div>
+                                <div>
+                                    <br>
+                                </div>
+                            </form>
+                        </div>
+                </fieldset>
+            <div>
+        </form>
+        <form>
+            <div class="boarder1">
+                <fieldset class="fld">
+                    <legend style="color:white;">Home Details</legend>
+                        <div>
+                            <form action="login" method='POST'>
+                                {% csrf_token %}
+                                <br>
+                                <div class="red">
+                                    <h3 class="t"> 1 BHK : Dimensions<br></h3> 
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Bedroom :
+                                    <input type="text"  class="t">
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Bathroom:
+                                    <input type="text" class="t">
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Kitchen :
+                                    <input type="radio" class="r" value="yes" checked> YES
+                                    <input type="radio" class="r" value="no" checked> NO
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Dining :
+                                    <input type="radio" class="r" value="yes" checked> YES
+                                    <input type="radio" class="r" value="no" checked> NO
+                                </div>
+                                <br>
+                                <div class="red">
+                                    <button type="submit" class="button" style="border-radius:0.5rem;box-shadow:0.15rem 0.15rem 0.15rem 0.15rem #ffff;position:absolute; margin-left:40%; margin-right:30%; height: 1.5rem;font-weight: bold;font-size:large; border: none; background-color:inherit; margin-right:1%;margin-left:1%;cursor:pointer; color:white;"> Generate </button>
+                                </div>
+                                <div>
+                                    <br>
+                                </div>
+                            </form>
+                        </div>
+                </fieldset>
+            <div>
+        </form>
+        <form>
+            <div class="boarder1">
+                <fieldset class="fld">
+                    <legend style="color:white;">Home Details</legend>
+                        <div>
+                            <form action="login" method='POST'>
+                                {% csrf_token %}
+                                <br>
+                                <div class="red">
+                                    <h3 class="t"> 1 BHK : Dimensions<br></h3> 
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Bedroom :
+                                    <input type="text"  class="t">
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Bathroom:
+                                    <input type="text" class="t">
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Kitchen :
+                                    <input type="radio" class="r" value="yes" checked> YES
+                                    <input type="radio" class="r" value="no" checked> NO
+                                </div>
+                                <br>
+                                <div class="red">
+                                    Dining :
+                                    <input type="radio" class="r" value="yes" checked> YES
+                                    <input type="radio" class="r" value="no" checked> NO
+                                </div>
+                                <br>
+                                <div class="red">
+                                    <button type="submit" class="button" style="border-radius:0.5rem;box-shadow:0.15rem 0.15rem 0.15rem 0.15rem #ffff;position:absolute; margin-left:40%; margin-right:30%; height: 1.5rem;font-weight: bold;font-size:large; border: none; background-color:inherit; margin-right:1%;margin-left:1%;cursor:pointer; color:white;"> Generate </button>
+                                </div>
+                                <div>
+                                    <br>
+                                </div>
+                            </form>
+                        </div>
+                </fieldset>
+            <div>
+        </form>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

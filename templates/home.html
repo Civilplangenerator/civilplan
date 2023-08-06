@@ -1,0 +1,179 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Civil Plan Generator</title>
+        <style>
+            body{
+                background:url('https://live.staticflickr.com/65535/53063046588_f762f07889_o.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0%;
+                padding: 0%;
+                margin-bottom: 0%;
+                scrollbar-width: none;
+            }
+            body::-webkit-scrollbar{
+                display: none;
+            }
+            :root{
+                --dark: #374151;
+                --darker: #1f2937;
+                --darkest: #111827;
+                --gray: #6B7280;
+                --light: #EEE;
+                --pink: #EC4899;
+                --purple: #885CF6;
+            }
+            .f{
+                background-image:linear-gradient(to right, var(--pink), var(--purple));
+            }
+
+            .bgr{
+                background-image:'backgroundpic.jpg' ;
+                height: 100%;
+                background-position: center;
+                background:no-repeat;
+                background-size:cover;
+            }
+            .heading{
+                background-color: inherit;
+                width: 25rem;
+                margin: auto;
+                border-radius: 12rem;
+                text-align: center;
+            }
+            .intro{
+                background-color: inherit;
+                width: 11rem;
+                margin: auto;
+                border-radius: 5rem;
+                text-align: center;
+
+            }
+            .red{
+                width: 40rem;
+                margin: auto;
+                border-radius: 10rem;
+                text-align: center;
+                height: 2rem;
+            }
+
+            .s1{
+                background-color: rgb(235, 230, 230);
+                width: max-content;
+                margin: auto;
+            }
+
+            .t{
+                width: 20rem;
+                height: 1.5rem;
+                initial-letter-align: center;
+                margin: auto;
+                border-radius: 5rem;
+                text-align: center;
+
+            }
+            .r{
+                width: 7rem;
+                color: #111827;
+            }
+            .but{
+                width: 20rem;
+                height: 1.5rem;
+                background-color: inherit;
+            }
+            .boarder{
+                font-size: 18px;
+                width:center;
+                line-height: 1.8;
+                padding: 100px 400px;
+                color: black;
+            }
+            .boarder1{
+                font-size: 18px;
+                width:center;
+                line-height: 1.5;
+                padding: 100px 400px;
+                color: black;
+            }
+            .text{
+                text-align: center;
+            }
+            .fld{
+                backdrop-filter: blur(10px);
+                border-color: black;
+                border-radius: 1rem;
+            }
+            .port{
+                font-style: italic;
+                margin:auto;
+                text-align:center;
+                font-size: 3rem;
+            }
+            .intro2{
+                border-radius: 0.5rem;
+                padding: 3rem 18rem;
+            }
+            .content{
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 0.5rem;
+            }
+            .footer{
+                padding:3rem 18rem;
+            }
+        </style>
+    </head>
+    <body >
+        <form action="home" method="post">
+            <div style="margin:0.5%;"> 
+                <nav style="background:linear-gradient(60deg,rgb(13, 39, 93),rgb(17, 9, 92));border-radius:1.5rem;padding:0.4%;">
+                    <ul>
+                        <li><a href="http://127.0.0.1:8000/"><button type="button" style="border: none; background-color:inherit; margin-left:70%;font-size:16px;color:white;">home </button></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            <a href="civilplan/home/heading2"><button type="button" style="border: none; background-color:inherit;font-size:16px;cursor:pointer;color:white;">Benifits </button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="accounts/register"><button type="button"  style="border: none; background-color:inherit;font-size:16px;cursor:pointer;color:white;">login </button></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="accounts/login"><button type="button"  style="border: none; background-color:inherit;font-size:16px;cursor:pointer;color:white;">build </button></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div  align="center"  class="heading2">
+                <h1 class="port"style="color:white;"> 
+                    <br> Civil Plan Generator <br>
+                </h1>
+            </div>
+            <h3 class="intro2">
+                <fieldset class="content">
+                    <legend style=" color:white;font:18px">Introduction</legend>
+                        <div class="para">
+                            <p style="color:white;font-size:17px;">
+                                Our automated system harnesses the power of advanced artificial intelligence and computer vision technologies to streamline the civil plan generation process
+                            </p>
+                        </div>
+                </fieldset>
+            </h3>
+            <h3 align="auto" class="intro2">
+                <fieldset class="content">
+                    <legend style="color:white;">Benifits</legend>
+                        <div class="para">
+                            <p style="color:white;font-size:17px;">
+                            . Increased Efficiency: <br><br> &nbsp;&nbsp; Generate accurate civil plans in a fraction of the time compared to manual drafting methods. Reduce labor-intensive tasks and allocate resources to more critical aspects of your projects. <br><br><br>. Improved Accuracy:<br><br> &nbsp;&nbsp; Minimize human errors and inconsistencies often encountered in manual drafting. Our system ensures precise measurements, precise alignments, and comprehensive documentation.<br><br><br>. Cost Savings:<br><br> &nbsp;&nbsp; By automating the plan generation process, you save on labor costs associated with drafting personnel. Moreover, the reduction in errors and rework translates into cost savings in the long run.<br><br><br>. Enhanced Productivity:<br><br> &nbsp;&nbsp; The time saved in plan generation can be dedicated to other important project tasks, accelerating project timelines and improving overall productivity.               <br><br>         <br>. Scalability:<br><br> &nbsp;&nbsp; Our system is designed to handle projects of all sizes, from small-scale developments to large infrastructure initiatives. It adapts to your project requirements and scales as your needs evolve.
+                            </p>
+                        </div>
+                </fieldset>
+                </h3>  
+                <h3 align="auto" class="intro2">
+                    <fieldset class="content">
+                        <legend style="color:white;">working</legend>
+                            <div class="para" >
+                                <p style="color:white;font-size:17px;">
+                                . Intelligent Plan Generation: <br><br> &nbsp;&nbsp; Our system analyzes input data such as survey measurements, topographic maps, and design specifications. Using sophisticated algorithms, it automatically generates comprehensive civil plans, including site layouts, road alignments, grading plans, and drainage systems. Say goodbye to manual drafting and hello to precise and error-free plans!<br><br><br>. Customization Options:<br><br> &nbsp;&nbsp; We understand that every project is unique. That's why our Automated Civil Plan Drawer provides flexible customization options. You can easily adjust parameters such as scale, dimensions, and annotation styles to meet specific project requirements. The system adapts to your needs, ensuring seamless integration with your existing workflows.<br><br><br>. Collaboration and Version Control: <br><br> &nbsp;&nbsp; Our solution promotes collaboration and enhances team efficiency. Multiple stakeholders can access the system simultaneously, making real-time updates and annotations. Version control functionality ensures that all project contributors work on the latest plan iteration, minimizing confusion and errors.<br><br><br>. Regulatory Compliance:<br><br> &nbsp;&nbsp; Keeping up with local regulations and standards is crucial in civil engineering. Our Automated Civil Plan Drawer stays up to date with the latest guidelines, ensuring compliance with zoning codes, building regulations, and environmental requirements. You can rely on our system to generate plans that adhere to industry best practices.
+                                </p>
+                            </div>
+                    </fieldset>
+                </h3>
+        </form> 
+    </body>  
+</html>
